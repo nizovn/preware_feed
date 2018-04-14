@@ -1,0 +1,78 @@
+Package: com.nizovn.glibc
+Version: 4.8-2015.06-0
+Depends: 
+Section: System Utilities
+Architecture: armv7
+MD5Sum: bfee36e1cd839758aafc8faee80c4213
+Size: 58522234
+Filename: com.nizovn.glibc_4.8-2015.06-0_armv7.ipk
+Description: Glibc runtime libraries (linaro)
+Maintainer: nizovn <nizovn@gmail.com>
+Source: { "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1523705335", "Title":"Glibc runtime libraries (linaro)", "FullDescription":"Linaro glibc shared libraries (libstdc++, libc, etc.).<br><br>Changelog:<br>4.8-2015.06-0: First public release", "Homepage":"https://www.linaro.org", "Icon":"https://upload.wikimedia.org/wikipedia/en/e/e7/Linaro_logo.png", "MinWebOSVersion":"2.2.0" }
+
+
+Package: com.nizovn.qt5qpaplugins
+Version: 1.0.0
+Depends: com.nizovn.glibc
+Section: System Utilities
+Architecture: armv7
+MD5Sum: 6cc6dca94f3b90af48dfba4dd4199f75
+Size: 307630
+Filename: com.nizovn.qt5qpaplugins_1.0.0_armv7.ipk
+Description: webOS Qt5 QPA Plugins
+Maintainer: nizovn <nizovn@gmail.com>
+Source: { "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1523705335", "Title":"webOS Qt5 QPA Plugins", "FullDescription":"webOS Qt5 QPA Plugins<br>Changelog:<br>1.0.0: First public release", "Homepage":"https://github.com/nizovn/qt5-qpa-webos-plugin", "Icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/320px-Qt_logo_2016.svg.png", "License":"LGPL v3 Open Source", "MinWebOSVersion":"2.2.0" }
+
+
+Package: com.nizovn.cacert
+Version: 2017-09-20
+Depends: 
+Section: System Utilities
+Architecture: armv7
+MD5Sum: 0f31ca2dc8f9324eb46b1e34108cc190
+Size: 135380
+Filename: com.nizovn.cacert_2017-09-20_armv7.ipk
+Description: Bundle of CA Root Certificates
+Maintainer: nizovn <nizovn@gmail.com>
+Source: { "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1523705335", "Title":"Bundle of CA Root Certificates", "FullDescription":"Bundle of CA Root Certificates from Mozilla for usage in Qt5 based applications.", "Homepage":"https://curl.haxx.se/docs/caextract.html", "MinWebOSVersion":"2.2.0" }
+
+
+Package: com.nizovn.qt5
+Version: 5.9.1-0
+Depends: com.nizovn.glibc, com.nizovn.qt5qpaplugins, com.nizovn.openssl, com.nizovn.cacert, org.webosinternals.dbus
+Section: System Utilities
+Architecture: armv7
+MD5Sum: 7447e737aac73decfd6ea037f75ace56
+Size: 66246344
+Filename: com.nizovn.qt5_5.9.1-0_armv7.ipk
+Description: Qt5 framework libraries
+Maintainer: nizovn <nizovn@gmail.com>
+Source: { "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1523705335", "Title":"Qt5 framework libraries", "FullDescription":"Cross-platform application development framework.<br><br>Changelog:<br>5.9.1-0: First public release", "Homepage":"https://www.qt.io/", "Icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/320px-Qt_logo_2016.svg.png", "License":"LGPL v3 Open Source", "MinWebOSVersion":"2.2.0" }
+
+
+Package: com.nizovn.qupzilla
+Version: 2.1.2-2
+Depends: com.nizovn.qt5
+Section: News And Internet
+Architecture: armv7
+MD5Sum: a40af7d847c964d272c9ba410f228c36
+Size: 4103472
+Filename: com.nizovn.qupzilla_2.1.2-2_armv7.ipk
+Description: QupZilla Web Browser
+Maintainer: nizovn <nizovn@gmail.com>
+Source: { "Feed":"WebOS Internals", "Type":"Application", "Category":"News And Internet", "LastUpdated":"1523705335", "Title":"QupZilla Web Browser", "FullDescription":"QupZilla is a new and very fast QtWebEngine browser. It aims to be a lightweight web browser available through all major platforms. This project has been originally started only for educational purposes. But from its start, QupZilla has grown into a feature-rich browser.<br> QupZilla has all standard functions you expect from a web browser. It includes bookmarks, history {both also in sidebar} and tabs. Above that, it has by default enabled blocking ads with a built-in AdBlock plugin.<br><br>Changelog:<br>2.1.2-2: Split into separate packages, first Preware release, added support for context menus on long tap, added close button to window frames<br> 2.1.2-1: Experimental phone support, enabled support for plugins/proprietary-codecs<br> 2.1.2-0: Initial version", "Homepage":"https://github.com/nizovn/qupzilla", "Screenshots":[ "https://raw.githubusercontent.com/nizovn/qupzilla/webos-v2.1.2/webOS/screenshots/qupzilla_2018-07-04_135052.png" ], "License":"GPL v3 Open Source", "MinWebOSVersion":"2.2.0" }
+
+
+Package: com.nizovn.openssl
+Version: 1.0.2l
+Depends: com.nizovn.glibc
+Section: System Utilities
+Architecture: armv7
+MD5Sum: c5a968283133ff2b5a55a7f16b66c20c
+Size: 980858
+Filename: com.nizovn.openssl_1.0.2l_armv7.ipk
+Description: Shared OpenSSL libs
+Maintainer: nizovn <nizovn@gmail.com>
+Source: { "Source":"http://www.openssl.org/source/openssl-1.0.2l.tar.gz", "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1495717791", "Title":"Shared OpenSSL libs", "FullDescription":"Shared OpenSSL libs", "Homepage":"https://www.openssl.org/", "Icon":"http://www.webos-internals.org/images/a/ae/Icon_WebOSInternals_OpenSSL.png", "MinWebOSVersion":"2.2.0" }
+
+
