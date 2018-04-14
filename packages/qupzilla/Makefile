@@ -6,6 +6,7 @@ TYPE	 = Application
 CATEGORY = News And Internet
 HOMEPAGE = https://github.com/nizovn/qupzilla
 MAINTAINER = nizovn <nizovn@gmail.com>
+ICON	 = https://raw.githubusercontent.com/nizovn/qupzilla/webos-v2.1.2/linux/hicolor/64x64/apps/qupzilla.png
 MINWEBOSVERSION = 2.2.0
 DESCRIPTION = QupZilla is a new and very fast QtWebEngine browser. It aims to be a lightweight web browser available through all major platforms. This project has been originally started only for educational purposes. But from its start, QupZilla has grown into a feature-rich browser.<br>\
 QupZilla has all standard functions you expect from a web browser. It includes bookmarks, history {both also in sidebar} and tabs. Above that, it has by default enabled blocking ads with a built-in AdBlock plugin.<br>
