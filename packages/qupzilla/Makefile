@@ -1,25 +1,27 @@
 NAME     = qupzilla
 TITLE	 = QupZilla Web Browser
 APP_ID   = com.nizovn.${NAME}
-VERSION  = 2.1.2-2
+VERSION  = 2.2.6-0
 TYPE	 = Application
 CATEGORY = News And Internet
 HOMEPAGE = https://github.com/nizovn/qupzilla
 MAINTAINER = nizovn <nizovn@gmail.com>
-ICON	 = https://raw.githubusercontent.com/nizovn/qupzilla/webos-v2.1.2/linux/hicolor/64x64/apps/qupzilla.png
+ICON	 = https://raw.githubusercontent.com/nizovn/qupzilla/webos-v2.2.6/linux/hicolor/64x64/apps/qupzilla.png
 MINWEBOSVERSION = 2.2.0
 DESCRIPTION = QupZilla is a new and very fast QtWebEngine browser. It aims to be a lightweight web browser available through all major platforms. This project has been originally started only for educational purposes. But from its start, QupZilla has grown into a feature-rich browser.<br>\
-QupZilla has all standard functions you expect from a web browser. It includes bookmarks, history {both also in sidebar} and tabs. Above that, it has by default enabled blocking ads with a built-in AdBlock plugin.<br>
+QupZilla has all standard functions you expect from a web browser. It includes bookmarks, history (both also in sidebar) and tabs. Above that, it has by default enabled blocking ads with a built-in AdBlock plugin.<br>
 CHANGELOG = \
+2.2.6-0: Upstream upgrade<br> \
 2.1.2-2: Split into separate packages, first Preware release, added support for context menus on long tap, added close button to window frames<br> \
 2.1.2-1: Experimental phone support, enabled support for plugins/proprietary-codecs<br> \
 2.1.2-0: Initial version
 
 SCREENSHOTS = [\
-\"https://raw.githubusercontent.com/nizovn/qupzilla/webos-v2.1.2/webOS/screenshots/qupzilla_2018-07-04_135052.png\"\
+\"https://raw.githubusercontent.com/nizovn/qupzilla/webos-v2.2.6/webOS/screenshots/qupzilla_2018-27-05_133959.png\"\
 ]
 LICENSE  = GPL v3 Open Source
 DEPENDS  = com.nizovn.qt5
+DEVICECOMPATIBILITY = [\"TouchPad\"]
 
 .PHONY: package
 package: ipkgs/${APP_ID}_${VERSION}_armv7.ipk
@@ -42,7 +44,6 @@ build/.unpacked-${VERSION}:
 	cp ${QUPZILLA_DIR}/webOS/pmPostInstall.script ${SRC_DIR}
 	cp ${QUPZILLA_DIR}/webOS/pmPreRemove.script ${SRC_DIR}
 	cp ${QUPZILLA_DIR}/webOS/package.properties ${SRC_DIR}
-	cp ${QUPZILLA_DIR}/webOS/qt.conf ${SRC_DIR}/bin
 
 	cp ${QUPZILLA_DIR}/bin/qupzilla ${SRC_DIR}/bin
 	cp ${QUPZILLA_DIR}/bin/libQupZilla.so.2 ${SRC_DIR}/bin
