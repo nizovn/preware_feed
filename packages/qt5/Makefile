@@ -1,18 +1,20 @@
 NAME     = qt5
 TITLE	 = Qt5 framework libraries
 APP_ID   = com.nizovn.${NAME}
-VERSION  = 5.9.1-0
+VERSION  = 5.9.5-0
 TYPE	 = Library
 CATEGORY = System Utilities
 HOMEPAGE = https://www.qt.io/
 MAINTAINER = nizovn <nizovn@gmail.com>
-ICON	 = https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/320px-Qt_logo_2016.svg.png
+ICON	 = https://raw.githubusercontent.com/nizovn/preware_feed/master/packages/qt5/qt5_64x64.png
 MINWEBOSVERSION = 2.2.0
 DESCRIPTION = Cross-platform application development framework.<br>
 CHANGELOG = \
+5.9.5-0: Upstream upgrade<br> \
 5.9.1-0: First public release
 LICENSE  = LGPL v3 Open Source
 DEPENDS  = com.nizovn.glibc, com.nizovn.qt5qpaplugins, com.nizovn.openssl, com.nizovn.cacert, org.webosinternals.dbus
+DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\"]
 
 .PHONY: package
 package: ipkgs/${APP_ID}_${VERSION}_armv7.ipk
@@ -37,8 +39,6 @@ build/.unpacked-${VERSION}:
 	cp -r ${QT5_WEBOS_DIR}/libexec ${SRC_DIR}
 	cp -r ${QT5_WEBOS_DIR}/resources ${SRC_DIR}
 	cp -r ${QT5_WEBOS_DIR}/translations ${SRC_DIR}
-
-	cp -RfL qt.conf ${SRC_DIR}/libexec
 	touch $@
 
 .PHONY: build
@@ -52,6 +52,11 @@ build/%.built-${VERSION}: build/.unpacked-${VERSION}
 	mkdir -p build/$*/usr/palm/applications/${APP_ID}/
 	cp -r build/src/* build/$*/usr/palm/applications/${APP_ID}/
 	touch $@
+
+build/%/CONTROL/postinst:
+	mkdir -p build/$*/CONTROL
+	install -m 0775 pmPostInstall.script $@
+	chmod ugo+x $@
 
 clobber::
 	rm -rf build

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+mkdir -p /media/internal/appdata/com.nizovn.qt5
+
+exit 0

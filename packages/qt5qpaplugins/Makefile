@@ -1,17 +1,19 @@
 NAME     = qt5qpaplugins
 TITLE	 = webOS Qt5 QPA Plugins
 APP_ID   = com.nizovn.${NAME}
-VERSION  = 1.0.0
+VERSION  = 1.0.1
 TYPE	 = Library
 CATEGORY = System Utilities
 HOMEPAGE = https://github.com/nizovn/qt5-qpa-webos-plugin
 MAINTAINER = nizovn <nizovn@gmail.com>
-ICON	 = https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Qt_logo_2016.svg/320px-Qt_logo_2016.svg.png
+ICON	 = https://raw.githubusercontent.com/nizovn/preware_feed/master/packages/qt5/qt5_64x64.png
 MINWEBOSVERSION = 2.2.0
 CHANGELOG = \
+1.0.1: Upgrade Qt to 5.9.5<br> \
 1.0.0: First public release
 LICENSE  = LGPL v3 Open Source
 DEPENDS  = com.nizovn.glibc
+DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\"]
 
 .PHONY: package
 package: ipkgs/${APP_ID}_${VERSION}_armv7.ipk
