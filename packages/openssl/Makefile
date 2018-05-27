@@ -1,15 +1,16 @@
 NAME     = openssl
 TITLE	 = Shared OpenSSL libs
 APP_ID   = com.nizovn.${NAME}
-SRC_VER  = 1.0.2l
-VERSION  = 1.0.2l
+SRC_VER  = 1.0.2o
+VERSION  = 1.0.2o
 TYPE	 = Library
 CATEGORY = System Utilities
 HOMEPAGE = https://www.openssl.org/
 MAINTAINER = nizovn <nizovn@gmail.com>
 ICON	 = http://www.webos-internals.org/images/a/ae/Icon_WebOSInternals_OpenSSL.png
 MINWEBOSVERSION = 2.2.0
-DEPENDS  = com.nizovn.glibc
+DEPENDS  = com.nizovn.glibc, com.nizovn.cacert
+DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\"]
 
 SRC_TGZ = http://www.openssl.org/source/openssl-${SRC_VER}.tar.gz
 
@@ -27,7 +28,6 @@ build/.unpacked-${VERSION}: ${DL_DIR}/${NAME}-${VERSION}.tar.gz
 	mkdir -p build/armv7
 	tar -C build -xf ${DL_DIR}/${NAME}-${VERSION}.tar.gz
 	mv build/${NAME}-${SRC_VER} build/src
-
 	touch $@
 
 .PHONY: build
@@ -42,7 +42,7 @@ build/%.built-${VERSION}: build/.unpacked-${VERSION}
 	rm -rf build/$*
 	( cd build/src ; \
 	  CC=${CROSS_COMPILE_$*}gcc \
-	  ./Configure shared no-zlib no-asm linux-elf; \
+	  ./Configure shared no-zlib no-asm --openssldir=/media/cryptofs/apps/usr/palm/applications/com.nizovn.cacert/files linux-elf; \
 	  ${MAKE} \
 		AR="${CROSS_COMPILE_$*}ar r" RANLIB=${CROSS_COMPILE_$*}ranlib \
 		clean all )
