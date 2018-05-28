@@ -9,7 +9,7 @@ MAINTAINER = nizovn <nizovn@gmail.com>
 ICON	 = https://upload.wikimedia.org/wikipedia/en/e/e7/Linaro_logo.png
 MINWEBOSVERSION = 2.2.0
 DESCRIPTION = Linaro glibc shared libraries (libstdc++, libc, etc.).<br>
-DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\"]
+DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\",\"Opal\"]
 CHANGELOG = \
 4.8-2015.06-0: First public release
 

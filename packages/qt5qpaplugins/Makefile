@@ -13,7 +13,7 @@ CHANGELOG = \
 1.0.0: First public release
 LICENSE  = LGPL v3 Open Source
 DEPENDS  = com.nizovn.glibc
-DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\"]
+DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\",\"Opal\"]
 
 .PHONY: package
 package: ipkgs/${APP_ID}_${VERSION}_armv7.ipk

@@ -8,7 +8,7 @@ HOMEPAGE = https://curl.haxx.se/docs/caextract.html
 MAINTAINER = nizovn <nizovn@gmail.com>
 MINWEBOSVERSION = 2.2.0
 DESCRIPTION = Bundle of CA Root Certificates from Mozilla for usage in Qt5 based applications.
-DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\"]
+DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\",\"Opal\"]
 
 .PHONY: package
 package: ipkgs/${APP_ID}_${VERSION}_armv7.ipk
