@@ -1,40 +1,40 @@
 Package: com.nizovn.glibc
 Version: 4.8-2015.06-0
 Depends: 
-Section: System Utilities
+Section: Libraries
 Architecture: armv7
 MD5Sum: b20ab8059e1588d0060888cdfd5841bf
 Size: 58523086
 Filename: com.nizovn.glibc_4.8-2015.06-0_armv7.ipk
 Description: Glibc runtime libraries (linaro)
 Maintainer: nizovn <nizovn@gmail.com>
-Source: { "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1527536881", "Title":"Glibc runtime libraries (linaro)", "FullDescription":"Linaro glibc shared libraries (libstdc++, libc, etc.).<br><br>Changelog:<br>4.8-2015.06-0: First public release", "Homepage":"https://www.linaro.org", "Icon":"https://upload.wikimedia.org/wikipedia/en/e/e7/Linaro_logo.png", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
+Source: { "Feed":"WebOS Internals", "Type":"Linux Application", "Category":"Libraries", "LastUpdated":"1527613346", "Title":"Glibc runtime libraries (linaro)", "FullDescription":"Linaro glibc shared libraries (libstdc++, libc, etc.).<br><br>Changelog:<br>4.8-2015.06-0: First public release", "Homepage":"https://www.linaro.org", "Icon":"https://upload.wikimedia.org/wikipedia/en/e/e7/Linaro_logo.png", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
 
 
 Package: com.nizovn.qt5
 Version: 5.9.5-0
 Depends: com.nizovn.glibc, com.nizovn.qt5qpaplugins, com.nizovn.openssl, com.nizovn.cacert, org.webosinternals.dbus
-Section: System Utilities
+Section: Frameworks
 Architecture: armv7
 MD5Sum: 240857f6934926fdaff187acce431b0f
 Size: 66362512
 Filename: com.nizovn.qt5_5.9.5-0_armv7.ipk
 Description: Qt5 framework libraries
 Maintainer: nizovn <nizovn@gmail.com>
-Source: { "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1527536881", "Title":"Qt5 framework libraries", "FullDescription":"Cross-platform application development framework.<br><br>Changelog:<br>5.9.5-0: Upstream upgrade<br> 5.9.1-0: First public release", "Homepage":"https://www.qt.io/", "Icon":"https://raw.githubusercontent.com/nizovn/preware_feed/master/packages/qt5/qt5_64x64.png", "License":"LGPL v3 Open Source", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
+Source: { "Feed":"WebOS Internals", "Type":"Linux Application", "Category":"Frameworks", "LastUpdated":"1527613346", "Title":"Qt5 framework libraries", "FullDescription":"Cross-platform application development framework.<br><br>Changelog:<br>5.9.5-0: Upstream upgrade<br> 5.9.1-0: First public release", "Homepage":"https://www.qt.io/", "Icon":"https://raw.githubusercontent.com/nizovn/preware_feed/master/packages/qt5/qt5_64x64.png", "License":"LGPL v3 Open Source", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
 
 
 Package: com.nizovn.openssl
 Version: 1.0.2o
 Depends: com.nizovn.glibc, com.nizovn.cacert
-Section: System Utilities
+Section: Libraries
 Architecture: armv7
 MD5Sum: 4ffb807f6d428e1b513a3b5e905b2817
 Size: 983434
 Filename: com.nizovn.openssl_1.0.2o_armv7.ipk
 Description: Shared OpenSSL libs
 Maintainer: nizovn <nizovn@gmail.com>
-Source: { "Source":"http://www.openssl.org/source/openssl-1.0.2o.tar.gz", "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1522159417", "Title":"Shared OpenSSL libs", "FullDescription":"Shared OpenSSL libs", "Homepage":"https://www.openssl.org/", "Icon":"http://www.webos-internals.org/images/a/ae/Icon_WebOSInternals_OpenSSL.png", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
+Source: { "Source":"http://www.openssl.org/source/openssl-1.0.2o.tar.gz", "Feed":"WebOS Internals", "Type":"Linux Application", "Category":"Libraries", "LastUpdated":"1522159417", "Title":"Shared OpenSSL libs", "FullDescription":"Shared OpenSSL libs", "Homepage":"https://www.openssl.org/", "Icon":"http://www.webos-internals.org/images/a/ae/Icon_WebOSInternals_OpenSSL.png", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
 
 
 Package: com.nizovn.qupzilla
@@ -53,26 +53,26 @@ Source: { "Feed":"WebOS Internals", "Type":"Application", "Category":"News And I
 Package: com.nizovn.cacert
 Version: 2018-03-07
 Depends: 
-Section: System Utilities
+Section: Infrastructure
 Architecture: armv7
 MD5Sum: 024b810e4217de2474d22df6bc6b84a0
 Size: 122972
 Filename: com.nizovn.cacert_2018-03-07_armv7.ipk
 Description: Bundle of CA Root Certificates
 Maintainer: nizovn <nizovn@gmail.com>
-Source: { "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1527536881", "Title":"Bundle of CA Root Certificates", "FullDescription":"Bundle of CA Root Certificates from Mozilla for usage in Qt5 based applications.", "Homepage":"https://curl.haxx.se/docs/caextract.html", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
+Source: { "Feed":"WebOS Internals", "Type":"Linux Application", "Category":"Infrastructure", "LastUpdated":"1527613346", "Title":"Bundle of CA Root Certificates", "FullDescription":"Bundle of CA Root Certificates from Mozilla for usage in Qt5 based applications.", "Homepage":"https://curl.haxx.se/docs/caextract.html", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
 
 
 Package: com.nizovn.qt5qpaplugins
 Version: 1.0.1
 Depends: com.nizovn.glibc
-Section: System Utilities
+Section: Libraries
 Architecture: armv7
 MD5Sum: 096deb8cc3c2ae326096d7f92215ffd2
 Size: 308508
 Filename: com.nizovn.qt5qpaplugins_1.0.1_armv7.ipk
 Description: webOS Qt5 QPA Plugins
 Maintainer: nizovn <nizovn@gmail.com>
-Source: { "Feed":"WebOS Internals", "Type":"Library", "Category":"System Utilities", "LastUpdated":"1527536881", "Title":"webOS Qt5 QPA Plugins", "FullDescription":"webOS Qt5 QPA Plugins<br>Changelog:<br>1.0.1: Upgrade Qt to 5.9.5<br> 1.0.0: First public release", "Homepage":"https://github.com/nizovn/qt5-qpa-webos-plugin", "Icon":"https://raw.githubusercontent.com/nizovn/preware_feed/master/packages/qt5/qt5_64x64.png", "License":"LGPL v3 Open Source", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
+Source: { "Feed":"WebOS Internals", "Type":"Linux Application", "Category":"Libraries", "LastUpdated":"1527613346", "Title":"webOS Qt5 QPA Plugins", "FullDescription":"webOS Qt5 QPA Plugins<br>Changelog:<br>1.0.1: Upgrade Qt to 5.9.5<br> 1.0.0: First public release", "Homepage":"https://github.com/nizovn/qt5-qpa-webos-plugin", "Icon":"https://raw.githubusercontent.com/nizovn/preware_feed/master/packages/qt5/qt5_64x64.png", "License":"LGPL v3 Open Source", "MinWebOSVersion":"2.2.0", "DeviceCompatibility":["Pre3","TouchPad","Opal"] }
 
 
