@@ -21,7 +21,7 @@ SCREENSHOTS = [\
 ]
 LICENSE  = GPL v3 Open Source
 DEPENDS  = com.nizovn.qt5
-DEVICECOMPATIBILITY = [\"TouchPad\",\"Opal\"]
+DEVICECOMPATIBILITY = [\"TouchPad\",\"Touchpad Go\"]
 
 .PHONY: package
 package: ipkgs/${APP_ID}_${VERSION}_armv7.ipk

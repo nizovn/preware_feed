@@ -14,7 +14,7 @@ CHANGELOG = \
 5.9.1-0: First public release
 LICENSE  = LGPL v3 Open Source
 DEPENDS  = com.nizovn.glibc, com.nizovn.qt5qpaplugins, com.nizovn.openssl, com.nizovn.cacert, org.webosinternals.dbus
-DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\",\"Opal\"]
+DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\",\"Touchpad Go\"]
 
 .PHONY: package
 package: ipkgs/${APP_ID}_${VERSION}_armv7.ipk

@@ -10,7 +10,7 @@ MAINTAINER = nizovn <nizovn@gmail.com>
 ICON	 = http://www.webos-internals.org/images/a/ae/Icon_WebOSInternals_OpenSSL.png
 MINWEBOSVERSION = 2.2.0
 DEPENDS  = com.nizovn.glibc, com.nizovn.cacert
-DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\",\"Opal\"]
+DEVICECOMPATIBILITY = [\"Pre3\",\"TouchPad\",\"Touchpad Go\"]
 
 SRC_TGZ = http://www.openssl.org/source/openssl-${SRC_VER}.tar.gz
 
